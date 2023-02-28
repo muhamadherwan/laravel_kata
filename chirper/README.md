@@ -33,3 +33,11 @@ laravel bc kata:
       - add relationship user has many chirps in model
       - set mass assigment fillable to message column in chirp model
       - update chirp migration add user id and message column and migrate it
+      - test create + validation new chip message
+      - sue tinker to see the data insert or not in db
+    
+    - Show
+        - update index method to select user message from db
+        - set user relationship to chirp model so we can display the author name
+        - update index view blade file
+        - test index page at browser 
