@@ -15,8 +15,15 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+
+                    {{-- chirps index page --}}
+                    <x-nav-link :href="route('chirps.index')" :active="request()->routeIs('chirps.index')">
+                        {{ __('Chirps') }}
+                    </x-nav-link>
                 </div>
             </div>
+
+
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ml-6">
@@ -71,6 +78,10 @@
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
         </div>
+
+        <x-responsive-nav-link :href="route('chirps.index')" :active="request()->routeIs('chirps.index')">
+            {{ __('Chirps') }}
+        </x-responsive-nav-link>
 
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200">
