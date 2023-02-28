@@ -41,3 +41,10 @@ laravel bc kata:
         - set user relationship to chirp model so we can display the author name
         - update index view blade file
         - test index page at browser 
+
+    - Edit
+        - add edit route
+        - add edit link at the index page
+        - create edit form blade
+        - create edit and update method at controller
+        - make model policy so only owner can update his message.
